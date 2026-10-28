@@ -1,0 +1,21 @@
+{
+  "name": "vaultly-server",
+  "version": "1.0.0",
+  "description": "Pure Node.js backend for Vaultly Personal Finance Tracker",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test src/tests/crypto.test.js src/tests/currency.test.js src/tests/auth_and_ownership.test.js",
+    "seed": "node scripts/seed.js"
+  },
+  "keywords": ["finance", "node", "mongodb", "pure-node-http"],
+  "author": "25070521010",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "google-auth-library": "^9.15.0",
+    "mongodb": "^6.12.0"
+  }
+}

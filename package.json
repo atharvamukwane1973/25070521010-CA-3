@@ -1,0 +1,16 @@
+{
+  "name": "25070521010-vaultly",
+  "version": "1.0.0",
+  "description": "Vaultly — Personal Finance Tracker (College Project 25070521010)",
+  "private": true,
+  "scripts": {
+    "start": "node server/src/server.js",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "dev": "powershell -Command \"Start-Process npm -ArgumentList '--prefix', 'server', 'run', 'dev'; Start-Process npm -ArgumentList '--prefix', 'client', 'run', 'dev'\"",
+    "test": "npm --prefix server run test",
+    "seed": "npm --prefix server run seed"
+  },
+  "author": "25070521010",
+  "license": "ISC"
+}
